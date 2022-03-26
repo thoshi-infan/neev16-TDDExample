@@ -24,4 +24,11 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",result);
     }
 
+    @Test
+    void ShouldReturnStringValueIfTheNumberIsNotDivisibleByBothThreeAndFive() {
+        FizzBuzz fizzBuzz = new FizzBuzz(7);
+        String result = fizzBuzz.returnString();
+        assertEquals("7",result);
+    }
+
 }
