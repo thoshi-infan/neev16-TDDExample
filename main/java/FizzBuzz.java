@@ -6,9 +6,16 @@ public class FizzBuzz {
     }
 
     public String returnString() {
-        if(number % 3 ==0 && number % 5 == 0) return "FizzBuzz";
-        if(number % 3 == 0) return "Fizz";
-        if(number % 5 == 0) return "Buzz";
+        if( divisibleByNumber(3) && divisibleByNumber(5) )
+            return "FizzBuzz";
+        if( divisibleByNumber(3) )
+            return "Fizz";
+        if( divisibleByNumber(5) )
+            return "Buzz";
         return Integer.toString(number);
+    }
+
+    public boolean divisibleByNumber(int divisor){
+        return number % divisor == 0;
     }
 }

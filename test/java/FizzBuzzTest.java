@@ -5,8 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTest {
     @Test
     void ShouldReturnFizzIfTheNumberIsDivisibleByThree() {
+        //Arrange
         FizzBuzz fizzBuzz = new FizzBuzz(3);
+        //Act
         String result = fizzBuzz.returnString();
+        //Assert
         assertEquals("Fizz",result);
     }
 
