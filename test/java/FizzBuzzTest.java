@@ -1,5 +1,17 @@
-import org.junit.jupiter.api.Test;
+/*
+TDD   - Test Driven Development - Developed by Kent Beck as a part of Extreme Programming.
+        - Writing the Test Cases Before Developing Your Code.
+        - Writing the failed test cases first and then make it to Pass.
+        - TDD Cycle Red-Green-Refactor
 
+        - Write a test for the next bit of functionality you want to add.
+        - Write the functional code until the test passes.
+        - Refactor both new and old code to make it well structured.
+            - Refactoring is a disciplined technique for restructuring an existing body of code,
+            - Altering its internal structure without changing its external behavior.
+*/
+
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
